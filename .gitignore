@@ -1,0 +1,107 @@
+# ---------------------------------------------------------------------------
+# Python / virtual environments
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# ---------------------------------------------------------------------------
+# Local logs and runtime state
+# ---------------------------------------------------------------------------
+logs/
+*.log
+zones.json
+
+# ---------------------------------------------------------------------------
+# Model weights and exported models
+# Keep the repository small and clone-friendly. Download weights on demand.
+# ---------------------------------------------------------------------------
+models/*.pt
+models/*.onnx
+models/*.engine
+models/*.bin
+models/*.xml
+models/*_openvino_model/
+models/*_saved_model/
+models/*_tflite_model/
+*.pt
+*.onnx
+*.engine
+*.tflite
+
+# ---------------------------------------------------------------------------
+# Generated demo output and training artefacts
+# ---------------------------------------------------------------------------
+out_*.jpg
+out_*.jpeg
+out_*.png
+runs/
+datasets/
+
+# ---------------------------------------------------------------------------
+# Submission bundle and generated archives
+# The bundle is produced locally for submission; it is not part of the public
+# source repository.
+# ---------------------------------------------------------------------------
+submission/
+*.zip
+
+# ---------------------------------------------------------------------------
+# Presentation and internal review material
+# ---------------------------------------------------------------------------
+*.ppt
+*.pptx
+PPT_2ND_REVIEW_TEMPLATE_GUIDE.md
+PPT_CONTENT.md
+my ppt.pdf
+Smart_HVAC_Presenter_Brief.pdf
+
+# ---------------------------------------------------------------------------
+# Secrets, keys, certificates, and local configuration
+# ---------------------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+certs/
+secrets/
+
+# ---------------------------------------------------------------------------
+# Editor / OS noise
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# ---------------------------------------------------------------------------
+# Large local media
+# ---------------------------------------------------------------------------
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
